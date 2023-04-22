@@ -2,3 +2,4 @@ com\minecraft\sandbox\utils\ChatUtils.class
 com\minecraft\sandbox\listeners\BlockBreakListener$1.class
 com\minecraft\sandbox\MinecraftSandbox.class
 com\minecraft\sandbox\listeners\BlockBreakListener.class
+com\minecraft\sandbox\commands\HelloCommand.class
