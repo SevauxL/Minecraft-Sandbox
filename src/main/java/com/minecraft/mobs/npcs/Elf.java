@@ -26,7 +26,6 @@ public final class Elf {
   public static final Inventory inventory = Bukkit.createInventory(null, 9, "Rewards");
   static Random rng = new Random();
   // -----------------------
-
   /**
    * Spawns the Elf NPC into the world. Also plays a visual/audio cue.
    * @param location location at which to spawn
@@ -58,6 +57,8 @@ public final class Elf {
     }
   }
 
+  public static NPC getEntity() { return entity; }
+
   /**
    * Sets a path from the current NPC location to the new one, and travels to it.
    * @param location location to travel to
@@ -65,7 +66,6 @@ public final class Elf {
   public static void setTarget(Location location) {
     if (entity.isSpawned()) {
       entity.faceLocation(location);
-      // entity.getNavigator().setTarget(location); // FIXME: not working, it instantly teleports.
     }
   }
 

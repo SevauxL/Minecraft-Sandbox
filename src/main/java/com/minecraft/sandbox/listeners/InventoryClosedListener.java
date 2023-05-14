@@ -1,14 +1,10 @@
 package com.minecraft.sandbox.listeners;
 
 import com.minecraft.mobs.npcs.Elf;
-import net.citizensnpcs.api.event.NPCRightClickEvent;
 import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryCloseEvent;
-
-import java.util.Objects;
 
 public class InventoryClosedListener implements Listener {
   /**
